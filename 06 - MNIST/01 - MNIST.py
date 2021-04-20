@@ -1,5 +1,7 @@
 # 머신러닝 학습의 Hello World 와 같은 MNIST(손글씨 숫자 인식) 문제를 신경망으로 풀어봅니다.
-import tensorflow as tf
+#import tensorflow as tf
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
 
 from tensorflow.examples.tutorials.mnist import input_data
 # 텐서플로우에 기본 내장된 mnist 모듈을 이용하여 데이터를 로드합니다.

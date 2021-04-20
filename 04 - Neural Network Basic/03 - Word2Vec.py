@@ -1,12 +1,14 @@
 # Word2Vec 모델을 간단하게 구현해봅니다.
-import tensorflow as tf
+#import tensorflow as tf
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
 import matplotlib
 import matplotlib.pyplot as plt
 import numpy as np
 
 # matplot 에서 한글을 표시하기 위한 설정
 font_name = matplotlib.font_manager.FontProperties(
-                fname="/Library/Fonts/NanumGothic.otf"  # 한글 폰트 위치를 넣어주세요
+                fname="../TensorFlow-Tutorials/Fonts/NanumGothic.otf"  # 한글 폰트 위치를 넣어주세요
             ).get_name()
 matplotlib.rc('font', family=font_name)
 

@@ -1,5 +1,7 @@
 # 과적합 방지 기법 중 하나인 Dropout 을 사용해봅니다.
-import tensorflow as tf
+#import tensorflow as tf
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
 import numpy as np
 import matplotlib.pyplot as plt
 
